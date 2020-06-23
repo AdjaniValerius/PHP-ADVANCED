@@ -1,0 +1,11 @@
+div{
+    border: solid red 1px;
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+
+button{
+    border: solid red 1px;
+    box-shadow: red;
+}
