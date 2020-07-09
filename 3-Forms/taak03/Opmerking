@@ -1,4 +1,4 @@
 Kun je nog iets zeg waarom er twee manieren zijn: Get en Post? Wat is het voordeel van Get en wat van Post? In welke situaties gebruik je Get en wanneer Post?
 
-GET = is een soort van array die je een waarde kan geven en elke keer als je die GET opvraagd dan krijg je de waarde die je hebt gegeven.
-POST = is ook een soort van array die je een waarde kan geven, maar met deze kan je data naar een server schrijven om het zo te zeggen.
+GET = is een soort van variable die je een waarde kan geven en elke keer als je die GET opvraagd dan krijg je de waarde die je hebt gegeven.
+POST = is ook een soort van variable die je een waarde kan geven, maar met deze kan je data naar een server schrijven om het zo te zeggen.
