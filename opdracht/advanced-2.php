@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <link rel="stylesheet" type="text/css" href="Style.css">
-        <script src="script.js"></script>
         <title></title>
 
     </head>
 
     <body>
+    <form name="invoerformulier" action="mijngegevens.php" method="POST">
 
+        voornaam    <input type="text" name="voornaam"><br>
+        achternaam  <input type="text" name="achternaam"><br>
+        klas        <input type="text" name="klas"><br>
+        leeftijd    <input type="text" name="leeftijd"><br>
+        adres       <input type="text" name="adres"><br>
+        plaatsnaam  <input type="text" name="plaatsnaam"><br>
+        favorite band<input type="text" name="favband"><br>
+
+    <input type="submit" name="submit" value="verstuur">
     </body>
 
 </html>
