@@ -4,18 +4,14 @@ $kleuren = array("red", "blue", "green", "black", "brown")
 
 ?>
 
-<html>
+<html></html>   
     <head>
-        <link rel="stylesheet" type="text/css" href="Style.css">
-        <script src="script.js"></script>
-        <title></title>
-
         <style> 
             body  {
-                background-color : <?php echo $_POST["kleur"];?>
+                background-color : <?php echo $_POST["kleurkeuze"];?>
             }
         </style>
-
+        <title></title>
     </head>
 
     <body>
@@ -31,8 +27,8 @@ $kleuren = array("red", "blue", "green", "black", "brown")
             <input type="submit" value="verzenden">
         </form>
 
-        <p>kleur</p>
-        <select name="kleur" id="kleur">
+        <p>kleurkeuze</p>
+        <select name="kleurkeuze" id="kleur">
             <option value="red">Red</option>
             <option value="yellow">Yellow</option>
             <option value="blue">Blue</option>
@@ -42,4 +38,3 @@ $kleuren = array("red", "blue", "green", "black", "brown")
 
     </body>
 
-</html>
