@@ -30,10 +30,10 @@
         }
         ?>
             <?php
-            $gegevens = array(  "Naam" => "Adjani ", 
-                                "Leeftijd" => "17 ", 
-                                "Muzieksmaak" => "hip-hop ",
-                                "Woonplaats" => "Amsterdam ");
+            $gegevens = array(  "Naam:" => "Adjani ", 
+                                "Leeftijd:" => "17 ", 
+                                "Muzieksmaak:" => "hip-hop ",
+                                "Woonplaats:" => "Amsterdam ");
             foreach($gegevens as $gegeven => $value) {
                 maakRij($gegeven, $value);
             }
