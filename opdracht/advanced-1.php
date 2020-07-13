@@ -1,40 +1,57 @@
-<?php 
-
-$kleuren = array("red", "blue", "green", "black", "brown")
-
-?>
-
-<html></html>   
+<html>   
     <head>
-        <style> 
-            body  {
-                background-color : <?php echo $_POST["kleurkeuze"];?>
-            }
-        </style>
-        <title></title>
+        <title>Advanced 1</title>
     </head>
 
     <body>
-        <form mehtod="POST">
-            <select name="klas"> 
-                <option value=""></option>
-                    <?php
-                        foreach ($kleuren as $kleur) {
-                        echo "<option value='". $kleur . "'> ". $kleur . "</option>";
-                        }
-                    ?>
-                </select>
-            <input type="submit" value="verzenden">
-        </form>
+    <form action="advanced-2.php" name="invoerformulier" method="POST">
+        <label for="tekstkleur">Kies je tekstkleur: </label>
+        <select name="tekstkleur" id="tekstkleur">
+            <?php
+            $tekstKleuren = array("red", "blue", "green", "black", "brown");
+            foreach($tekstKleuren as $tekstKleur) {
+                ?>
+            <option value="<?php echo $tekstKleur?>"><?php echo $tekstKleur ?></option>
+            <?php
+            }
+            ?>
+        </select><br>
+        <label for="achtergrond">Kies je achtergrond kleur: </label>
+        <select name="achtergrond" id="achtergrond">
+            <?php
+            $kleuren = array("red", "blue", "green", "black", "brown");
+            foreach($kleuren as $kleur) {
+                ?>
+            <option value="<?php echo $kleur?>"><?php echo $kleur ?></option>
+            <?php
+            }
+            ?>
+        </select><br>
+        <label for="dikte">Tabel-border dikte: </label>
+        <select name="dikte" id="dikte">
+            <?php
+            $diktes = array("1px", "5px", "10px");
+            foreach($diktes as $dikte) {
+                ?>
+            <option value="<?php echo $dikte?>"><?php echo $dikte ?></option>
+            <?php
+            }
+            ?>
+        </select><br>
+        <label for="padding">Padding: </label>
+        <select name="padding" id="padding">
+            <?php
+            $paddings = array("1px", "5px", "10px");
+            foreach($paddings as $padding) {
+                ?>
+            <option value="<?php echo $padding?>"><?php echo $padding ?></option>
+            <?php
+            }
+            ?>
+        </select><br>
+        <input type="submit" name="submit" value="verstuur">
+    </form>
 
-        <p>kleurkeuze</p>
-        <select name="kleurkeuze" id="kleur">
-            <option value="red">Red</option>
-            <option value="yellow">Yellow</option>
-            <option value="blue">Blue</option>
-            <option value="orange">Orange</option>
-            <option value="green">Green</option>
-        </select>
 
     </body>
-
+</html>
