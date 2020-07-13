@@ -34,7 +34,6 @@
                                 "Leeftijd" => "17 ", 
                                 "Muzieksmaak" => "hip-hop ",
                                 "Woonplaats" => "Amsterdam ");
-                                "Geboorteplaats" => "Leiden ");
             foreach($gegevens as $gegeven => $value) {
                 maakRij($gegeven, $value);
             }
